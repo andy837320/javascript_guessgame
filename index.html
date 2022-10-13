@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Game</title>
+</head>
+<body>
+   <main>
+    <div id="welcomeScreen">
+          <h2> Guess random numbers between 1-200</h2>
+          <img src="./images/guessgame.png" alt="logo"></img>
+
+        <section class="eventsection">
+          <p> Select your choice</p>
+          <div class="buttonwrapper">
+              <button> Easy: 8 attempts</button>
+              <button> Hard: 12 attempts</button>
+          </div>
+        </section>
+    </div>
+    <!-- {/* Actual game area */} -->
+
+    <div id="gameArea">
+        <div id="newgameButton">
+            <button> New game </button>
+        </div>
+        <section>
+            <h3> Your Guess </h3>
+            <input type=" text" 
+             id="inputBox"
+             min="1" max="200" 
+             placeholder="PLease enter your guess"
+            />
+        </section>
+        <section class="stats">
+            <div class="info">
+                <p> Number of Previous attempts</p>
+                <span id="attempts"> 0 </span>
+            </div>
+            <div class="info">
+                <p> Number of Previous guesses</p>
+                <span id="guesses"> - </span>
+            </div>
+
+        </section>
+    </div>
+
+   </main> 
+</body>
+</html>
